@@ -49,12 +49,13 @@ FAQ Card
   background-position: -275px 30px;
   max-width: 920px;
   height: auto;
-  border-radius: 8px;
+  border-radius: 23px;
   margin: 7rem auto;
   display: flex;
   align-items: center;
   padding: 3rem 0;
   position: relative;
+  box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
 }
 
 .faq-img {
@@ -74,30 +75,42 @@ img.box-img {
 }
 
 .faq-text {
-  margin: 2rem;
+  padding: 2rem;
 }
 
 h2 {
-  margin-top: -3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1.3rem;
 }
 
-.faq-question-answer-container {
-  display: flex;
-  flex-direction: column;
-  padding-right: 3rem;
+.question {
+  font-size: 14px;
+  font-weight: 700;
+  padding-bottom: 1rem;
+  position: relative;
 }
 
-.faq-question-heading {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.faq-question-heading-arrow img {
+.question::after {
+  content: "";
+  position: absolute;
   cursor: pointer;
+  background-image: url(./images/icon-arrow-down.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 8px;
+  top: 5px;
+  right: 90px;
 }
 
-.faq-question-answer {
-  padding: 1rem 0;
+.answer {
+  padding-right: 2rem;
+}
+
+.question-divider {
+  background-color: #e8e8ea;
+  margin-top: 10px;
+  margin: 20px 0;
+  height: 2px;
+  width: 85%;
 }
