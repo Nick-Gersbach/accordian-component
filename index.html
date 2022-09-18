@@ -2,90 +2,93 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- displays site properly based on user's device -->
+
+    <title>FAQ Accordion Card</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Accordian Component</title>
   </head>
   <body>
-        <div id="faq-card">
-      <div class="faq-img">
-        <img class="desktop-woman" src="./images/illustration-woman-online-desktop.svg" alt="desktop-woman" />
-        <img class="mobile-woman" src="./images/illustration-woman-online-mobile.svg" alt="mobile-woman">
+    <section class="card">
+      <img
+        src="/images/illustration-box-desktop.svg"
+        alt="card box"
+        class="card__box"
+      />
+      <div class="card__image">
         <img
-          class="box-img"
-          src="./images/illustration-box-desktop.svg"
-          alt="box"
+          src="/images/illustration-woman-online-desktop.svg"
+          alt="woman online desktop"
         />
       </div>
-      <div class="faq-text">
-        <h2>FAQ</h2>
-        <div class="accordian">
-        <div class="accordian__item">
-           <h4>
-            <button class="accordian__question open">
-            How many team members can I invite?
+      <div class="card__text">
+        <h1>FAQ</h1>
+
+        <div class="accordion">
+          <div class="accordion__item">
+            <button class="accordion__question">
+              How many team members can I invite?
             </button>
-          </h4>
-          <div class="accordian__collapse collapse">
-            <p class="accordian__content">
-              You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.
-            </p>
+            <div class="accordion__collapse collapse">
+              <div class="accordion__content">
+                You can invite up to 2 additional users on the Free plan. There
+                is no limit on team members for the Premium plan.
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="question-divider"></div>
-        <div class="accordian__item">
-          <h4>
-            <button class="accordian__question">
-            What is the maximum file upload size?
+          <div class="accordion__item">
+            <button class="accordion__question">
+              What is the maximum file upload size?
             </button>
-          </h4>
-          <p class="accordian__content">
-          No more than 2GB. All files in your account must fit your allotted storage space.
-          </p>
-        </div>
-        <div class="question-divider"></div>
-        <div class="accordian__item">
-          <h4>
-            <button class="accordian__question">
-            How do I reset my password?
+            <div class="accordion__collapse collapse">
+              <div class="accordion__content">
+                No more than 2GB. All files in your account must fit your
+                allotted storage space.
+              </div>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__question">
+              How do I reset my password?
             </button>
-          </h4>
-          <p class="accordian__content">
-           Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.
-          </p>
-        </div>
-        <div class="question-divider"></div>
-        <div class="accordian__item">
-          <h4>
-            <button class="accordian__question">
-            Can I cancel my subscription?
+            <div class="accordion__collapse collapse">
+              <div class="accordion__content">
+                Click “Forgot password” from the login page or “Change password”
+                from your profile page. A reset link will be emailed to you.
+              </div>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__question">
+              Can I cancel my subscription?
             </button>
-          </h4>
-          <p class="accordian__content">
-           Yes! Send us a message and we’ll process your request no questions asked.
-          </p>
-        </div>
-        <div class="question-divider"></div>
-        <div class="accordian__item">
-          <h4>
-            <button class="accordian__question">
+            <div class="accordion__collapse collapse">
+              <div class="accordion__content">
+                Yes! Send us a message and we’ll process your request no
+                questions asked.
+              </div>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__question">
               Do you provide additional support?
             </button>
-          </h4>
-          <p class="accordian__content">
-            Chat and email support is available 24/7. Phone lines are open during normal business hours.
-          </p>
-        </div>
-        <div class="question-divider"></div>
+            <div class="accordion__collapse collapse">
+              <div class="accordion__content">
+                Chat and email support is available 24/7. Phone lines are open
+                during normal business hours.
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>
