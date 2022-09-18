@@ -16,7 +16,8 @@
   <body>
         <div id="faq-card">
       <div class="faq-img">
-        <img src="./images/illustration-woman-online-desktop.svg" alt="" />
+        <img class="desktop-woman" src="./images/illustration-woman-online-desktop.svg" alt="desktop-woman" />
+        <img class="mobile-woman" src="./images/illustration-woman-online-mobile.svg" alt="mobile-woman">
         <img
           class="box-img"
           src="./images/illustration-box-desktop.svg"
@@ -25,46 +26,65 @@
       </div>
       <div class="faq-text">
         <h2>FAQ</h2>
-        <div class="faq-question-answer-container">
-          <h4 class="question">How many team members can I invite?</h4>
-          <p class="answer">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-            consequuntur explicabo voluptatibus!
+        <div class="accordian">
+        <div class="accordian__item">
+           <h4>
+            <button class="accordian__question open">
+            How many team members can I invite?
+            </button>
+          </h4>
+          <div class="accordian__collapse collapse">
+            <p class="accordian__content">
+              You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.
+            </p>
+          </div>
+        </div>
+        <div class="question-divider"></div>
+        <div class="accordian__item">
+          <h4>
+            <button class="accordian__question">
+            What is the maximum file upload size?
+            </button>
+          </h4>
+          <p class="accordian__content">
+          No more than 2GB. All files in your account must fit your allotted storage space.
           </p>
         </div>
         <div class="question-divider"></div>
-        <div class="faq-question-answer-container">
-          <h4 class="question">How many team members can I invite?</h4>
-          <p class="answer">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-            consequuntur explicabo voluptatibus!
+        <div class="accordian__item">
+          <h4>
+            <button class="accordian__question">
+            How do I reset my password?
+            </button>
+          </h4>
+          <p class="accordian__content">
+           Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.
           </p>
         </div>
         <div class="question-divider"></div>
-        <div class="faq-question-answer-container">
-          <h4 class="question">How many team members can I invite?</h4>
-          <p class="answer">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-            consequuntur explicabo voluptatibus!
+        <div class="accordian__item">
+          <h4>
+            <button class="accordian__question">
+            Can I cancel my subscription?
+            </button>
+          </h4>
+          <p class="accordian__content">
+           Yes! Send us a message and we’ll process your request no questions asked.
           </p>
         </div>
         <div class="question-divider"></div>
-        <div class="faq-question-answer-container">
-          <h4 class="question">How many team members can I invite?</h4>
-          <p class="answer">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-            consequuntur explicabo voluptatibus!
+        <div class="accordian__item">
+          <h4>
+            <button class="accordian__question">
+              Do you provide additional support?
+            </button>
+          </h4>
+          <p class="accordian__content">
+            Chat and email support is available 24/7. Phone lines are open during normal business hours.
           </p>
         </div>
         <div class="question-divider"></div>
-        <div class="faq-question-answer-container">
-          <h4 class="question">How many team members can I invite?</h4>
-          <p class="answer">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-            consequuntur explicabo voluptatibus!
-          </p>
         </div>
-        <div class="question-divider"></div>
       </div>
     <script src="script.js"></script>
   </body>
